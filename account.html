@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="first.css">
+    <link rel="stylesheet" href="jQuery/jquery.js">
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+</style>
+<style>
+    .imgMain{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<title>bafo & broer </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+
+
+
+    <!-----account page------>
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="form-container">
+                        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left"></form>
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="#">Forgot Password</a>
+                        </form>
+                        <form id="RegForm">
+                            <input type="hidden" name="access_key" value="d30c3788-7cba-4c6e-9786-a74532f3dbfd">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+      <!----footer---->
+                    <div class="footer">
+                        <div class="container">
+                                <div class="footer-col-1">
+                                    <h3>Download Our App</h3>
+                                    <p>Android & ios Devices.</p>
+                                    <div class="app-logo">
+                                <a href="#"><img src="images/Google.png"></a>        
+                                <a href="#"><img src="images/AppStore.png"></a>     
+                                </div>
+                                </div>
+                                <div class="footer-col-2">
+                                    <p></p>
+                                    </div>
+                                    <div class="footer-col-3">
+                                        <h3>Useful Links:</h3>
+                                    <ul>
+                                        <li>Coupons</li>
+                                        <li>Blog Post</li>
+                                        <li>Return Policy</li> 
+                                        <li>Join Affiliate</li>                    
+                                    </ul>
+                                    </div>
+                                    <div class="footer-col-4">
+                                        <h3></h3>
+                                        <ul>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <p class="copyright">Copyright 2025 - Bafo & Broer Hardware Store</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!---js for toggle form------>
+                    <script>
+                        var LoginForm = document.getElementById("LoginForm");
+                        var RegForm = document.getElementById("RegForm");
+                        var Indicator  = document.getElementById("Indicator");
+
+                        function register(){
+                            RegForm.style.transform = "translateX(0px)";
+                            LoginForm.style.transform = "translateX(0px)";
+                            Indicator.style.transform = "translateX(100px)";
+
+                        }
+                        function login(){
+                            RegForm.style.transform = "translateX(300px)";
+                            LoginForm.style.transform = "translateX(300px)";
+                            Indicator.style.transform = "translateX(0px)";
+
+                        }
+                    </script>
+
+                </body>
+</html>
